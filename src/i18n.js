@@ -1,0 +1,160 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+// Translation resources
+const resources = {
+  en: {
+    translation: {
+      "jobTitle": "Junior Frontend Developer",
+      "introText": "New to web development, but eager and dedicated to learning and growing in this field",
+      "aboutNav": "About Me",
+      "experienceNav": "Experience",
+      "projectsNav": "Projects",
+      "about":  "As a Customer Service Agent employed by <1>Concentrix</1> for major <3>social</3> <5>media</5> platforms, I often helped customers with issues related to ads and pixel scripts. Curious about how these JavaScript snippets worked, I began learning about web development, starting with the fascinating details of how a website's head and body elements function. This sparked my interest in the field, and I decided to take an online course with CareerFoundry.",
+      "about2": "During the course, I completed six main projects. I learned the basics of web development, built a MongoDB database, created a functional API, and developed two front-end interfaces using React and Angular. I also created a chat app with React Native.",
+      "about3": "Beyond my professional pursuits, I enjoy engaging in activities that enhance my problem-solving skills, such as playing board games like Magic: The Gathering. I also have a green thumb, tending to my three lemon trees and previously growing a variety of vegetables, including lettuce and tomatoes.I am now eager to transition into a career that aligns with my passion and skills, ready to bring my web development skills and enthusiasm to a new professional environment.",
+      "experience1": "Student · ",
+      "experience2": "In the Full-Stack Immersion course, I learned to become a proficient full-stack developer by mastering both frontend and backend development.",
+      "experience3": "Customer Service Agent · ",
+      "experience4": "As a Customer Service Agent working from a home office, I specialize in customer care for online advertisements on major social media platforms. My role involves handling inquiries through calls, emails, and chats in a call center environment. I possess technical knowledge of advertising tools such as Business Manager and Ad Accounts. Additionally, I am skilled in troubleshooting ad performance issues, assisting with account setups, and providing guidance on optimizing ad campaigns. My responsibilities also include maintaining a high level of customer satisfaction by delivering prompt and accurate support.",
+      "Technical Proficiency":"Technical Proficiency",
+      "Great Communication":"Great Communication",
+      "Problem-Solving":"Problem-Solving",
+      "Interpersonal Skills":"Interpersonal Skills",
+      "Cabin Crew Member":"Cabin Crew Member · ",
+      "Cabin Crew Description":"As a Cabin Crew member, my primary responsibility is to ensure the safety, comfort, and overall satisfaction of passengers during their flight. My role encompasses a wide range of duties and responsibilities, including:",
+      "Safety Procedures":"Safety Procedures",
+      "In-flight Services":"In-flight Services",
+      "Teamwork":"Teamwork",
+      "Time Management": "Time Management",
+      "Cultural Awareness": "Cultural Awareness",
+      "Sales and Marketing Skills": "Sales and Marketing Skills",
+      "Angular title":"An angular Frontend app,called myFlix",
+      "Angulad desc":"This is my very first attempt with Angular. There is a sign-in page that directly connects to my MongoDB database. After successfully logging in, the app will fetch movies from the database. You will be able to update your profile information, add movies to your favorites, and fetch information about directors and genres.",
+      "Agile project management techniques":"Agile project management techniques",
+      "Chatapp title": "Chatapp, made with React Native",
+      "Chatapp desc": "This is my attempt to do a ChatApp using React Native, the main features are:",
+      "User Authentication":"User Authentication",
+      "Chat Interface":"Chat Interface",
+      "Media Sharing": "Media Sharing",
+      "Location Sharing":"Location Sharing",
+      "Offline Access": "Offline Access",
+      "Accessibility":"Accessibility",
+      "Customizable UI":"Customizable UI",
+      "Meetapp title":"A prograssive web application called Meet App",
+      "Meetapp desc":"The app is designed to fetch and display upcoming events using the Google Calendar API, allowing users to filter events by city, view event details, specify the number of events displayed, and use the app offline. The development process follows a test-driven development (TDD) approach to ensure high-quality code and adequate test coverage. The app will include data visualization features to make it more visually appealing and informative. It will be hosted online, with serverless functions managing backend tasks, and it will be optimized for both mobile and desktop use.",
+      "React title":"A React Frontend app, called myFlix",
+      "React desc":"This project focuses on creating a responsive, single-page application (SPA) that communicates with an existing server-side REST API to provide a rich user experience. The app will allow users to access detailed information about movies, create and manage user profiles, and save their favorite movies.",
+      "Movie title":"Movie API",
+      "Movie desc":"A REST API that interacts with a database to provide information about movies, directors, and genres. Users will be able to sign up, update their information, and manage a list of favorite movies. The project emphasizes full-stack JavaScript development, focusing on backend technologies and demonstrating skills in APIs, web server frameworks, databases, business logic, authentication, and data security",
+      "Pokedex desc":"The app will load data from an external API and display it in a user-friendly manner. The project focuses on developing a functional and aesthetically pleasing application while emphasizing good coding practices, accessibility, and cross-browser compatibility. "
+      // Add more key-value pairs for other texts
+    }
+  },
+  de: {
+    translation: {
+      "jobTitle": "Junior Frontend-Entwickler",
+      "introText": "Neu im Web-Development, aber eifrig und engagiert, um zu lernen und in diesem Bereich zu wachsen",
+      "aboutNav": "Über mich",
+      "experienceNav": "Erfahrung",
+      "projectsNav": "Projekte",
+      "about": "Als Kundenservicemitarbeiter bei <1>Concentrix</1> für große <3>soziale</3> <5>Medien</5>-Plattformen habe ich oft Kunden bei Problemen im Zusammenhang mit Werbung und Pixel-Skripten geholfen. Neugierig, wie diese JavaScript-Snippets funktionierten, begann ich, mich mit Webentwicklung zu beschäftigen, angefangen bei den faszinierenden Details, wie der Kopf- und Körperbereich einer Website funktioniert. Das weckte mein Interesse an diesem Bereich, und ich entschied mich, einen Online-Kurs bei CareerFoundry zu belegen.",
+      "about2": "Während des Kurses habe ich sechs Hauptprojekte abgeschlossen. Ich lernte die Grundlagen der Webentwicklung, erstellte eine MongoDB-Datenbank, entwickelte eine funktionale API und entwickelte zwei Front-End-Oberflächen mit React und Angular. Außerdem habe ich eine Chat-App mit React Native erstellt.",
+      "about3": "Über meine beruflichen Aktivitäten hinaus genieße ich es, mich an Aktivitäten zu beteiligen, die meine Problemlösungsfähigkeiten verbessern, wie zum Beispiel das Spielen von Brettspielen wie Magic: The Gathering. Ich habe auch einen grünen Daumen und kümmere mich um meine drei Zitronenbäume und habe zuvor eine Vielzahl von Gemüsesorten angebaut, darunter Salat und Tomaten. Ich bin nun bereit, in eine Karriere zu wechseln, die mit meiner Leidenschaft und meinen Fähigkeiten übereinstimmt, und freue mich darauf, meine Expertise und Begeisterung für Webentwicklung in eine neue berufliche Umgebung einzubringen.",
+      "experience1": "Schüler · ",
+      "experience2": "Im Full-Stack-Immersion-Kurs habe ich gelernt, ein kompetenter Full-Stack-Entwickler zu werden, indem ich sowohl Frontend- als auch Backend-Entwicklung gemeistert habe.",
+      "experience3": "Kundenservice-Agent · ",
+      "experience4": "Als Kundenservice-Agent im Homeoffice spezialisiere ich mich auf die Kundenbetreuung für Online-Werbeanzeigen auf großen sozialen Medienplattformen. Meine Rolle umfasst die Bearbeitung von Anfragen über Anrufe, E-Mails und Chats in einer Callcenter-Umgebung. Ich besitze technisches Wissen über Werbetools wie Business Manager und Werbekonten. Darüber hinaus habe ich Erfahrungen bei der Fehlerbehebung, bei Anzeigenleistungsproblemen, der Unterstützung bei der Einrichtung von Konten und der Bereitstellung von Anleitungen zur Optimierung von Werbekampagnen. Zu meinen Aufgaben gehört es auch, ein hohes Maß an Kundenzufriedenheit durch schnelle und genaue Unterstützung zu gewährleisten.",
+      "Technical Proficiency":"Technische Kompetenz",
+      "Great Communication":"Hervorragende Kommunikation",
+      "Problem-Solving":"Problemlösung",
+      "Interpersonal Skills":"Zwischenmenschliche Fähigkeiten",
+      "Cabin Crew Member":"Kabinenbesatzung · ",
+      "Cabin Crew Description":"Als Mitglied der Kabinenbesatzung ist es meine Hauptverantwortung, die Sicherheit, den Komfort und die allgemeine Zufriedenheit der Passagiere während ihres Fluges zu gewährleisten. Meine Rolle umfasst eine Vielzahl von Aufgaben und Verantwortlichkeiten, darunter:",
+      "Safety Procedures":"Sicherheitsverfahren",
+      "In-flight Services":"Dienstleistungen an Bord",
+      "Teamwork":"Teamarbeit",
+      "Time Management": "Zeitmanagement",
+      "Cultural Awareness": "Kulturelles Bewusstsein",
+      "Sales and Marketing Skills": "Vertriebs- und Marketingfähigkeiten",
+      "Angular title":"Eine Angular-Frontend-App namens myFlix",
+      "Angulad desc":"Dies ist mein erster Versuch mit Angular. Es gibt eine Anmeldeseite, die direkt mit meiner MongoDB-Datenbank verbunden ist. Nach erfolgreichem Login ruft die App Filme aus der Datenbank ab. Sie können Ihre Profildaten aktualisieren, Filme zu Ihren Favoriten hinzufügen und Informationen zu Regisseuren und Genres abrufen.",
+      "Agile project management techniques":"Agile Projektmanagement-Techniken",
+      "Chatapp title": "Chatapp, erstellt mit React Native",
+      "Chatapp desc": "Dies ist mein Versuch, eine Chat-App mit React Native zu erstellen. Die Hauptfunktionen sind:",
+      "User Authentication":"Benutzerauthentifizierung",
+      "Chat Interface":"Chat-Oberfläche",
+      "Media Sharing": "Medienfreigabe",
+      "Location Sharing":"Standortfreigabe",
+      "Offline Access": "Offline-Zugriff",
+      "Accessibility":"Barrierefreiheit",
+      "Customizable UI":"Anpassbare Benutzeroberfläche",
+      "Meetapp title":"Eine progressive Webanwendung namens Meet App",
+      "Meetapp desc":"Die App ist so konzipiert, dass sie bevorstehende Ereignisse mit der Google Calendar API abruft und anzeigt. Benutzer können Ereignisse nach Stadt filtern, Ereignisdetails anzeigen, die Anzahl der angezeigten Ereignisse angeben und die App offline verwenden. Der Entwicklungsprozess folgt einem testgetriebenen Entwicklungsansatz (TDD), um hochwertigen Code und eine angemessene Testabdeckung sicherzustellen. Die App wird Datenvisualisierungsfunktionen enthalten, um sie ansprechender und informativer zu gestalten. Sie wird online gehostet, wobei serverlose Funktionen Backend-Aufgaben verwalten, und sie wird sowohl für die mobile als auch für die Desktop-Nutzung optimiert.",
+      "React title":"Eine React-Frontend-App namens myFlix",
+      "React desc":"Dieses Projekt konzentriert sich darauf, eine reaktionsschnelle Single-Page-Anwendung (SPA) zu erstellen, die mit einer vorhandenen serverseitigen REST-API kommuniziert, um ein reichhaltiges Benutzererlebnis zu bieten. Die App ermöglicht es Benutzern, detaillierte Informationen zu Filmen abzurufen, Benutzerprofile zu erstellen und zu verwalten sowie ihre Lieblingsfilme zu speichern.",
+      "Movie title":"Film-API",
+      "Movie desc":"Eine REST-API, die mit einer Datenbank interagiert, um Informationen über Filme, Regisseure und Genres bereitzustellen. Benutzer können sich anmelden, ihre Informationen aktualisieren und eine Liste ihrer Lieblingsfilme verwalten. Das Projekt betont die Full-Stack-JavaScript-Entwicklung und konzentriert sich auf Backend-Technologien und zeigt Fähigkeiten in APIs, Webserver-Frameworks, Datenbanken, Geschäftslogik, Authentifizierung und Datensicherheit.",
+      "Pokedex desc":"Die App lädt Daten von einer externen API und zeigt sie benutzerfreundlich an. Das Projekt konzentriert sich darauf, eine funktionale und ästhetisch ansprechende Anwendung zu entwickeln und dabei gute Programmierpraktiken, Barrierefreiheit und plattformübergreifende Kompatibilität zu betonen."
+    }
+  },
+  it: {
+    translation: {
+      "jobTitle": "Sviluppatore Frontend Junior",
+      "introText": "Nuovo nello sviluppo web, ma desideroso e dedicato ad apprendere e crescere in questo campo",
+      "aboutNav": "Informazioni su di me",
+      "experienceNav": "Esperienza",
+      "projectsNav": "Progetti",
+      "about": "Come Agente di Servizio Clienti presso <1>Concentrix</1> per le principali piattaforme di <3>social</3> <5>media</5>, ho spesso aiutato i clienti con problemi relativi agli annunci e agli script pixel. Curioso di capire come funzionassero questi snippet JavaScript, ho iniziato a imparare lo sviluppo web, partendo dai dettagli affascinanti di come funzionano le sezioni head e body di un sito web. Questo ha acceso il mio interesse per il campo, e ho deciso di seguire un corso online con CareerFoundry.",
+      "about2": "Durante il corso, ho completato sei progetti principali. Ho imparato le basi dello sviluppo web, ho creato un database MongoDB, sviluppato un'API funzionale e sviluppato due interfacce front-end utilizzando React e Angular. Ho anche creato un'app di chat con React Native.",
+      "about3": "Oltre alle mie attività professionali, mi piace impegnarmi in attività che migliorano le mie capacità di risoluzione dei problemi, come giocare a giochi da tavolo come Magic: The Gathering. Ho anche il pollice verde, prendendomi cura dei miei tre alberi di limone e coltivando in passato una varietà di ortaggi, tra cui lattuga e pomodori. Sono ora desideroso di passare a una carriera che sia in linea con la mia passione e le mie competenze, pronto a portare la mia esperienza e il mio entusiasmo per lo sviluppo web in un nuovo ambiente professionale.",
+      "experience1": "Studente · ",
+      "experience2": "Nel corso Full-Stack Immersion, ho imparato a diventare uno sviluppatore full-stack competente padroneggiando sia lo sviluppo frontend che backend.",
+      "experience3": "Agente del Servizio Clienti · ",
+      "experience4": "Come Agente del Servizio Clienti lavorando da casa, mi specializzo nell'assistenza ai clienti per le pubblicità online sulle principali piattaforme di social media. Il mio ruolo comprende la gestione delle richieste tramite chiamate, e-mail e chat in un ambiente di call center. Possiedo conoscenze tecniche sugli strumenti pubblicitari come Business Manager e Ad Accounts. Inoltre, sono abile nel risolvere problemi relativi alle prestazioni degli annunci, assistere nella configurazione degli account e fornire indicazioni per ottimizzare le campagne pubblicitarie. Le mie responsabilità includono anche il mantenimento di un alto livello di soddisfazione del cliente fornendo supporto rapido e preciso.",
+      "Technical Proficiency":"Competenza tecnica",
+      "Great Communication":"Ottima comunicazione",
+      "Problem-Solving":"Risoluzione dei problemi",
+      "Interpersonal Skills":"Abilità interpersonali",
+      "Cabin Crew Member":"Membro dell'equipaggio di cabina · ",
+      "Cabin Crew Description":"Come membro dell'equipaggio di cabina, la mia principale responsabilità è garantire la sicurezza, il comfort e la soddisfazione generale dei passeggeri durante il volo. Il mio ruolo comprende una vasta gamma di compiti e responsabilità, tra cui:",
+      "Safety Procedures":"Procedure di sicurezza",
+      "In-flight Services":"Servizi a bordo",
+      "Teamwork":"Lavoro di squadra",
+      "Time Management": "Gestione del tempo",
+      "Cultural Awareness": "Consapevolezza culturale",
+      "Sales and Marketing Skills": "Competenze di vendita e marketing",
+      "Angular title":"Un'app frontend Angular chiamata myFlix",
+      "Angulad desc":"Questo è il mio primissimo tentativo con Angular. C'è una pagina di accesso che si collega direttamente al mio database MongoDB. Dopo aver effettuato con successo l'accesso, l'app recupererà i film dal database. Sarai in grado di aggiornare le informazioni del tuo profilo, aggiungere film ai tuoi preferiti e recuperare informazioni su registi e generi.",
+      "Agile project management techniques":"Tecniche di gestione agile dei progetti",
+      "Chatapp title": "Chatapp, realizzata con React Native",
+      "Chatapp desc": "Questo è il mio tentativo di creare una ChatApp utilizzando React Native. Le principali caratteristiche sono:",
+      "User Authentication":"Autenticazione dell'utente",
+      "Chat Interface":"Interfaccia di chat",
+      "Media Sharing": "Condivisione di media",
+      "Location Sharing":"Condivisione della posizione",
+      "Offline Access": "Accesso offline",
+      "Accessibility":"Accessibilità",
+      "Customizable UI":"Interfaccia utente personalizzabile",
+      "Meetapp title":"Un'applicazione web progressiva chiamata Meet App",
+      "Meetapp desc":"L'app è progettata per recuperare e visualizzare eventi imminenti utilizzando l'API di Google Calendar, consentendo agli utenti di filtrare gli eventi per città, visualizzare i dettagli degli eventi, specificare il numero di eventi visualizzati e utilizzare l'app offline. Il processo di sviluppo segue un approccio di sviluppo test-driven (TDD) per garantire codice di alta qualità e una copertura di test adeguata. L'app includerà funzionalità di visualizzazione dei dati per renderla più visivamente attraente e informativa. Sarà ospitata online, con funzioni serverless che gestiscono i compiti di backend, e sarà ottimizzata sia per l'uso mobile che desktop.",
+      "React title":"Un'app frontend React chiamata myFlix",
+      "React desc":"Questo progetto si concentra sulla creazione di un'applicazione a pagina singola (SPA) reattiva che comunica con un'API REST lato server esistente per fornire un'esperienza utente ricca. L'app consentirà agli utenti di accedere a informazioni dettagliate sui film, creare e gestire profili utente e salvare i propri film preferiti.",
+      "Movie title":"API di film",
+      "Movie desc":"Un'API REST che interagisce con un database per fornire informazioni su film, registi e generi. Gli utenti potranno registrarsi, aggiornare le proprie informazioni e gestire un elenco di film preferiti. Il progetto enfatizza lo sviluppo JavaScript full-stack, concentrandosi sulle tecnologie di backend e dimostrando competenze in API, framework di server web, database, logica aziendale, autenticazione e sicurezza dei dati.",
+      "Pokedex desc":"L'app caricherà dati da un'API esterna e li visualizzerà in modo user-friendly. Il progetto si concentra sullo sviluppo di un'applicazione funzionale ed esteticamente gradevole, enfatizzando buone pratiche di codifica, accessibilità e compatibilità cross-browser."
+    }
+  }
+};
+
+i18n
+  .use(initReactI18next) // Passes i18n down to react-i18next
+  .init({
+    resources,
+    lng: "en", // language to use (i.e., English)
+    interpolation: {
+      escapeValue: false // React already safes from XSS
+    }
+  });
+
+export default i18n;
