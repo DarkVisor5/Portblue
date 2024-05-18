@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portblue/static/css/main.13eb3fda.css",
-    "main.js": "/Portblue/static/js/main.36a24711.js",
+    "main.css": "/Portblue/static/css/main.ef6b31e7.css",
+    "main.js": "/Portblue/static/js/main.4bf5223e.js",
     "static/media/Angularapp.PNG": "/Portblue/static/media/Angularapp.a7d0281961e3e30f17af.PNG",
     "static/media/chatapp.PNG": "/Portblue/static/media/chatapp.8bf6342a098aa99978a8.PNG",
     "static/media/mongo.PNG": "/Portblue/static/media/mongo.3fedffd3898b48ff9c57.PNG",
     "static/media/events.PNG": "/Portblue/static/media/events.3e97b6a38e1ef3f0a72d.PNG",
     "static/media/pokedex.PNG": "/Portblue/static/media/pokedex.238612b1e00d60489479.PNG",
     "index.html": "/Portblue/index.html",
-    "main.13eb3fda.css.map": "/Portblue/static/css/main.13eb3fda.css.map",
-    "main.36a24711.js.map": "/Portblue/static/js/main.36a24711.js.map"
+    "main.ef6b31e7.css.map": "/Portblue/static/css/main.ef6b31e7.css.map",
+    "main.4bf5223e.js.map": "/Portblue/static/js/main.4bf5223e.js.map"
   },
   "entrypoints": [
-    "static/css/main.13eb3fda.css",
-    "static/js/main.36a24711.js"
+    "static/css/main.ef6b31e7.css",
+    "static/js/main.4bf5223e.js"
   ]
 }
