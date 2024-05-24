@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal portfolio website built using React and Tailwind CSS. The website showcases my projects, work experience, and provides an easy way to switch between multiple languages (English, German, Italian). Definitely overkill using React, but it was fun to try it out using this Library.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+    Features
+    Technologies Used
+    Setup
+    Usage
+    Project Structure
+    Contributing
+    License
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Multi-language Support: Users can switch between English, German, and Italian.
+    Responsive Design: Fully responsive design ensuring usability on different devices.
+    Project Showcase: Displays a list of my projects with descriptions and technologies used.
+    Work Experience: Provides an overview of my work experience with details on each role.
+    Social Media Links: Includes links to my GitHub, LinkedIn, Instagram, Twitter, and Medium profiles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+    React: JavaScript library for building user interfaces.
+    Tailwind CSS: Utility-first CSS framework for styling.
+    i18next: Internationalization framework for React.
+    React-i18next: Integration of i18next for React.
+    Vercel: Hosting platform for modern web projects.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Setup
 
-### `npm run build`
+## Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Node.js
+    npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Installation
 
-### `npm run eject`
+Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/YourUsername/portfolio.git
+cd portfolio
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+sh
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
+# or
+yarn install
 
-## Learn More
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+sh
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
+# or
+yarn start
 
-### Code Splitting
+Open your browser and navigate to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+arduino
 
-### Analyzing the Bundle Size
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Change Language: Use the language buttons in the header to switch between English, German, and Italian.
+    Navigate Sections: Use the navigation links to jump to different sections of the page (About, Experience, Projects).
+    View Projects: Click on project links to view details and visit the live projects or repositories.
 
-### Advanced Configuration
+Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Fork the repository
 
-### Deployment
+    Create your feature branch:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    sh
 
-### `npm run build` fails to minify
+git checkout -b feature/your-feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Commit your changes:
+
+sh
+
+git commit -m 'Add some feature'
+
+Push to the branch:
+
+sh
+
+    git push origin feature/your-feature
+
+    Create a new Pull Request
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
