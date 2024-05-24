@@ -67,6 +67,7 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
 
 ## Project Structure
 
+```sh
 portfolio/
 ├── public/
 │   ├── index.html
