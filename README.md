@@ -87,7 +87,7 @@ portfolio/
 ```
 
 ## Components
-    
+
     ### MainPage:
         The main component containing all sections of the portfolio.
     
