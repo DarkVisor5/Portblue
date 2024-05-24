@@ -84,6 +84,7 @@ portfolio/
 │   └── index.css
 ├── package.json
 └── README.md
+```
 
 ## Components
     
