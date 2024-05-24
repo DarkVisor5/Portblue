@@ -44,21 +44,20 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
    cd portfolio
 
 2. **Install dependencies:**
-  ```sh
+   ```sh
     npm install
     # or
     yarn install
 
 3. **Start the development server:**
-    
     ```sh
     npm start
     # or
     yarn start
 
 4. **Open your browser and navigate to:**
-
-http://localhost:3000
+   ```sh
+   http://localhost:3000
 
 ## Usage
 
@@ -68,7 +67,6 @@ http://localhost:3000
 
 ## Project Structure
 
-```sh
 portfolio/
 ├── public/
 │   ├── index.html
